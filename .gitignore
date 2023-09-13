@@ -1,5 +1,6 @@
 *.ps1
 *.pub
+*.sh
 
 # Local .terraform directories
 **/.terraform/*
