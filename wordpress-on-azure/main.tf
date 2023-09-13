@@ -144,8 +144,8 @@ resource "azurerm_mssql_server" "jcassanji-tf-sqlserver" {
   location            = var.resource_region
   resource_group_name = azurerm_resource_group.jcassanji-tf-rg.name
   version                      = "12.0"
-  administrator_login          = "4dm1n157r470r"
-  administrator_login_password = "4-v3ry-53cr37-p455w0rd"
+  administrator_login          = var.DB_USER
+  administrator_login_password = var.DB_PWD
 }
 
 resource "azurerm_mssql_database" "jcassanji-tf-sqlserver-db" {
